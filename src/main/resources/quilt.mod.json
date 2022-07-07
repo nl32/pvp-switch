@@ -1,25 +1,25 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "com.example",
-		"id": "example_mod",
+		"group": "io.github.nl32",
+		"id": "pvp-switch",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"name": "Pvp Switch",
+			"description": "Serverside mod that lets pvp be enabled on a player by player basis",
 			"contributors": {
-				"Me!": "Owner"
+				"nl32": "Owner"
 			},
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"homepage": "https://nl32.github.io/",
+				"issues": "https://github.com/nl32/pvp-switch/issues",
+				"sources": "https://github.com/nl32/pvp-switch"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/pvp-switch/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"server_init": "io.github.nl32.pvp_switch.PvpSwitch"
 		},
 		"depends": [
 			{
@@ -36,5 +36,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "pvp-switch.mixins.json"
 }
